@@ -2,47 +2,50 @@
 	"components": [
 		{
 			"className": ".sf-page #pgInstructions",
-			"id": "111b-9434-7af7-a2bb",
-			"initialized": true,
+			"id": "e698-dd1d-55d2-2f4f",
+			"initialized": false,
 			"props": {
 				"children": [
-					"fcf0-e3d1-6f45-a974",
-					"edae-75b9-9015-78f4"
+					"bb82-eb88-4379-9201",
+					"dfac-a15c-01b1-8f25"
 				],
-				"name": "pgInstructions",
+				"name": "pgStatistics",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "0.0.1.a"
+			"version": "0.0.1.a",
+			"degree": 0
 		},
 		{
 			"className": ".sf-statusBar",
-			"id": "fcf0-e3d1-6f45-a974",
+			"id": "bb82-eb88-4379-9201",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "111b-9434-7af7-a2bb"
+				"parent": "e698-dd1d-55d2-2f4f"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {},
+			"degree": 1
 		},
 		{
 			"className": ".sf-headerBar",
-			"id": "edae-75b9-9015-78f4",
+			"id": "dfac-a15c-01b1-8f25",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "111b-9434-7af7-a2bb",
+				"parent": "e698-dd1d-55d2-2f4f",
 				"title": "pgInstructions"
 			},
 			"type": "HeaderBar",
 			"userProps": {
 				"title": "pgInstructions"
-			}
+			},
+			"degree": 1
 		}
 	]
 }

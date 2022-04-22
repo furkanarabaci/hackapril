@@ -1,117 +1,98 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgMain",
-			"id": "5671-238e-cade-c0d5",
-			"initialized": true,
-			"props": {
-				"children": [
-					"24dd-1e66-6c74-2b96",
-					"af5f-04dd-50db-a86d",
-					"f65c-3494-f271-f166",
-					"d0a9-6e7c-bf86-f3a3",
-					"bd5e-7706-aed1-e6a1",
-					"7b98-f5b1-d4c6-b1e6"
-				],
-				"isRemovable": true,
-				"name": "pgMain",
-				"orientation": "PORTRAIT",
-				"parent": null,
-				"safeAreaEnabled": true
-			},
 			"type": "Page",
-			"userProps": {
-				"orientation": "PORTRAIT",
-				"safeAreaEnabled": true
+			"id": "7f59-c2d6-9258-8fdd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgMain",
+				"parent": null,
+				"children": [
+					"c3e1-d0cf-c712-d679",
+					"1214-5139-47a0-0ea8"
+				],
+				"orientation": "PORTRAIT"
 			},
-			"version": "6.15.1"
+			"version": "0.0.1.a",
+			"initialized": false
 		},
 		{
-			"className": ".sf-statusBar",
-			"id": "24dd-1e66-6c74-2b96",
-			"props": {
-				"children": [],
-				"isRemovable": false,
-				"name": "statusBar",
-				"parent": "5671-238e-cade-c0d5"
-			},
 			"type": "StatusBar",
-			"userProps": {}
+			"id": "c3e1-d0cf-c712-d679",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "7f59-c2d6-9258-8fdd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
 		},
 		{
-			"className": ".sf-headerBar",
-			"id": "af5f-04dd-50db-a86d",
-			"props": {
-				"children": [],
-				"isRemovable": false,
-				"name": "headerBar",
-				"parent": "5671-238e-cade-c0d5",
-				"title": "Page1"
-			},
 			"type": "HeaderBar",
+			"id": "1214-5139-47a0-0ea8",
 			"userProps": {
-				"title": "Page1",
-				"visible": false
-			}
-		},
-		{
-			"className": ".sf-label #pgMain-lblHeader",
-			"id": "f65c-3494-f271-f166",
-			"oldName": "label1",
-			"props": {
-				"children": [],
-				"name": "lblHeader",
-				"parent": "5671-238e-cade-c0d5",
-				"text": "HOW TO PLAY"
+				"title": "pgMain"
 			},
-			"type": "Label",
-			"userProps": {
-				"text": "HOW TO PLAY"
-			}
-		},
-		{
-			"className": ".sf-label",
-			"id": "d0a9-6e7c-bf86-f3a3",
-			"oldName": "label2",
+			"className": ".sf-headerBar",
 			"props": {
+				"name": "headerBar",
+				"parent": "7f59-c2d6-9258-8fdd",
 				"children": [],
-				"name": "lblDescription",
-				"parent": "5671-238e-cade-c0d5",
-				"text": "Guess the WORDLE in six tries.\\n\\nEach guess must be a valid five-letter word. Hit the enter button to submit.\\n\\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
-			},
-			"type": "Label",
-			"userProps": {
-				"height": null,
-				"maxLines": 0,
-				"text": "Guess the WORDLE in six tries.\\n\\nEach guess must be a valid five-letter word. Hit the enter button to submit.\\n\\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
-			}
-		},
-		{
-			"className": ".sf-view #pgMain-separator",
-			"id": "bd5e-7706-aed1-e6a1",
-			"oldName": "view1",
-			"props": {
-				"children": [],
-				"name": "separator",
-				"parent": "5671-238e-cade-c0d5"
-			},
-			"type": "View",
-			"userProps": {}
-		},
-		{
-			"className": ".sf-label",
-			"id": "7b98-f5b1-d4c6-b1e6",
-			"oldName": "label2",
-			"props": {
-				"children": [],
-				"name": "lblExamples",
-				"parent": "5671-238e-cade-c0d5",
-				"text": "Examples"
-			},
-			"type": "Label",
-			"userProps": {
-				"text": "Examples"
+				"title": "pgMain",
+				"visible": true,
+				"isRemovable": false
 			}
 		}
-	]
+	],
+	"componentByID": {
+		"62ee-e279-9528-15ad": {
+			"type": "Page",
+			"id": "7f59-c2d6-9258-8fdd",
+			"userProps": {},
+			"className": ".sf-page",
+			"props": {
+				"name": "pgMain",
+				"parent": null,
+				"children": [
+					"c3e1-d0cf-c712-d679",
+					"1214-5139-47a0-0ea8"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "0.0.1.a",
+			"initialized": false
+		},
+		"f35d-ebd8-348c-7865": {
+			"type": "StatusBar",
+			"id": "c3e1-d0cf-c712-d679",
+			"userProps": {},
+			"className": ".sf-statusBar",
+			"props": {
+				"name": "statusBar",
+				"parent": "7f59-c2d6-9258-8fdd",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"4f48-1efc-0a9c-01ca": {
+			"type": "HeaderBar",
+			"id": "1214-5139-47a0-0ea8",
+			"userProps": {
+				"title": "pgMain"
+			},
+			"className": ".sf-headerBar",
+			"props": {
+				"name": "headerBar",
+				"parent": "7f59-c2d6-9258-8fdd",
+				"children": [],
+				"title": "pgMain",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
 }

@@ -3,4 +3,4 @@ import 'theme';
 import router from 'routes';
 import { startGame } from 'service/wordle';
 
-router.push('/pages/page1');
+router.push('/pages/main');

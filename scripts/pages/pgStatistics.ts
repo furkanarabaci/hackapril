@@ -1,8 +1,8 @@
-import PgInstructionsDesign from 'generated/pages/pgInstructions';
+import PgStatisticsDesign from 'generated/pages/pgStatistics';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
 
-export default class PgInstructions extends withDismissAndBackButton(PgInstructionsDesign) {
+export default class PgStatistics extends withDismissAndBackButton(PgStatisticsDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
   }

@@ -1,0 +1,165 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .flWord",
+			"id": "c94d-8383-e021-26af",
+			"props": {
+				"children": [
+					"5a81-6018-d9c9-560f",
+					"c4e1-22a2-c3d0-1fe2",
+					"9123-9886-58dc-1c97",
+					"7c05-2a9f-d68f-9779",
+					"9f40-ac8c-1b4d-5c3a"
+				],
+				"name": "flWord",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"left": 4.62,
+				"top": 215.38
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"hiddenComponent": false,
+			"id": "5a81-6018-d9c9-560f",
+			"oldName": "flLetter",
+			"props": {
+				"children": [],
+				"name": "flFirstLetter",
+				"parent": "c94d-8383-e021-26af",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"hiddenComponent": false,
+			"id": "c4e1-22a2-c3d0-1fe2",
+			"oldName": "flLetter2",
+			"props": {
+				"children": [],
+				"name": "flSecondLetter",
+				"parent": "c94d-8383-e021-26af",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"hiddenComponent": false,
+			"id": "9123-9886-58dc-1c97",
+			"oldName": "flLetter_1",
+			"props": {
+				"children": [],
+				"name": "flThirdLetter",
+				"parent": "c94d-8383-e021-26af",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"hiddenComponent": false,
+			"id": "7c05-2a9f-d68f-9779",
+			"oldName": "flLetter_2",
+			"props": {
+				"children": [],
+				"name": "flFourthLetter",
+				"parent": "c94d-8383-e021-26af",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"hiddenComponent": false,
+			"id": "9f40-ac8c-1b4d-5c3a",
+			"oldName": "flLetter_3",
+			"props": {
+				"children": [],
+				"name": "flFifthLetter",
+				"parent": "c94d-8383-e021-26af",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

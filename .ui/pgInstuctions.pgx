@@ -1,0 +1,261 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #pgMain",
+			"id": "fd34-9608-f7dd-6c82",
+			"initialized": true,
+			"props": {
+				"children": [
+					"7c85-cd16-5dc1-5249",
+					"3c97-954b-bbcf-41fb",
+					"1c65-8e6c-0768-085c",
+					"71dd-379d-3db8-1db1",
+					"b21a-f84f-be26-6387",
+					"7dd1-abb5-7ac6-8e1a",
+					"2949-b6a9-ef7c-7e97",
+					"7e06-2934-b8ba-b204",
+					"1eee-8396-941a-6743",
+					"2343-d69f-9a22-d8a7",
+					"6d8b-bfb7-ec5a-7368",
+					"a369-44be-84c9-7ea5"
+				],
+				"isRemovable": true,
+				"name": "pgInstuctions",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "PORTRAIT",
+				"safeAreaEnabled": true
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "7c85-cd16-5dc1-5249",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "fd34-9608-f7dd-6c82"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "3c97-954b-bbcf-41fb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "fd34-9608-f7dd-6c82",
+				"title": "Page1"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Page1",
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-label #pgMain-lblHeader",
+			"id": "1c65-8e6c-0768-085c",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblHeader",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "HOW TO PLAY"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "HOW TO PLAY"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "71dd-379d-3db8-1db1",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "lblDescription",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "Guess the WORDLE in six tries.\n\nEach guess must be a valid five-letter word. Hit the enter button to submit.\n\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
+			},
+			"type": "Label",
+			"userProps": {
+				"height": null,
+				"maxLines": 0,
+				"text": "Guess the WORDLE in six tries.\n\nEach guess must be a valid five-letter word. Hit the enter button to submit.\n\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
+			}
+		},
+		{
+			"className": ".sf-view #pgMain-separator",
+			"id": "b21a-f84f-be26-6387",
+			"oldName": "view1",
+			"props": {
+				"children": [],
+				"name": "separator",
+				"parent": "fd34-9608-f7dd-6c82"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label",
+			"id": "7dd1-abb5-7ac6-8e1a",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "lblExamples",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "Examples"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Examples"
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "2949-b6a9-ef7c-7e97",
+			"oldName": "flCorrectWord",
+			"props": {
+				"children": [],
+				"name": "flCorrectLetter",
+				"parent": "fd34-9608-f7dd-6c82",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "7e06-2934-b8ba-b204",
+			"oldName": "lblCorrectWordHint",
+			"props": {
+				"children": [],
+				"name": "lblCorrectLetterDisclaimer",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "The letter W is in the word and in the correct spot."
+			},
+			"type": "Label",
+			"userProps": {
+				"height": null,
+				"maxLines": 2,
+				"text": "The letter W is in the word and in the correct spot."
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "1eee-8396-941a-6743",
+			"oldName": "fl",
+			"props": {
+				"children": [],
+				"name": "flWrongSpot",
+				"parent": "fd34-9608-f7dd-6c82",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "2343-d69f-9a22-d8a7",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblWrongSpotDisclaimer",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "The letter I is in the word but in the wrong spot."
+			},
+			"type": "Label",
+			"userProps": {
+				"height": null,
+				"maxLines": 2,
+				"text": "The letter I is in the word but in the wrong spot."
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "6d8b-bfb7-ec5a-7368",
+			"oldName": "flWord1",
+			"props": {
+				"children": [],
+				"name": "flWrongLetter",
+				"parent": "fd34-9608-f7dd-6c82",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "a369-44be-84c9-7ea5",
+			"oldName": "label2",
+			"props": {
+				"children": [],
+				"name": "lblWrongLetterDisclaimer",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "The letter U is not in the word in any spot."
+			},
+			"type": "Label",
+			"userProps": {
+				"height": null,
+				"maxLines": 2,
+				"text": "The letter U is not in the word in any spot."
+			}
+		}
+	]
+}

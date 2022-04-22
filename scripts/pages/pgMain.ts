@@ -1,36 +1,26 @@
 import PgMainDesign from 'generated/pages/pgMain';
-import { Route, Router } from '@smartface/router';
-import Color from '@smartface/native/ui/color';
-import { WordState } from 'components/FlLetter';
+import { withDismissAndBackButton } from '@smartface/mixins';
+import { Router, Route } from '@smartface/router';
 
-export default class PgMain extends PgMainDesign {
-  private disposeables: (() => void)[] = [];
+export default class PgMain extends withDismissAndBackButton(PgMainDesign) {
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.layout.backgroundColor = Color.BLACK;
   }
 
   /**
    * @event onShow
-   * This event is called when a page appears on the screen (everytime).
+   * This event is called when the page appears on the screen (everytime).
    */
   onShow() {
     super.onShow();
+    this.initBackButton(this.router); //Addes a back button to the page headerbar.
   }
 
   /**
    * @event onLoad
-   * This event is called once when page is created.
+   * This event is called once when the page is created.
    */
   onLoad() {
     super.onLoad();
-  }
-
-  onHide(): void {
-    this.dispose();
-  }
-
-  dispose(): void {
-    this.disposeables.forEach((item) => item());
   }
 }

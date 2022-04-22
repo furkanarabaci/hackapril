@@ -1,0 +1,10 @@
+{
+  ".flWord": {
+    "height": 60,
+    "flexProps": {
+      "justifyContent": "SPACE_AROUND",
+      "flexDirection": "ROW"
+    },
+    "width": 325
+  }
+}
