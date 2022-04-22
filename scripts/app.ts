@@ -1,4 +1,5 @@
 /* globals lang */
+import '@smartface/native';
 import 'i18n/i18n'; // Generates global lang object
 import Application from '@smartface/native/application';
 import { errorStackBySourceMap } from '@smartface/source-map';
@@ -11,9 +12,11 @@ const error = errorStackBySourceMap(e);
     message: System.OS === System.OSType.ANDROID ? error.stack : e.message,
     stack: System.OS === System.OSType.IOS ? error.stack : undefined
   };
-  console.error("Unhandled Error: ", errorData.message, {
-    ...errorData
-  });
-  alert(JSON.stringify(errorData, null, 2), e.type || lang.applicationError);
+  if(errorData.stack || System.OS === System.OSType.ANDROID) {
+    console.error("Unhandled Error: ", errorData.message, {
+      ...errorData
+    });
+    alert(JSON.stringify(errorData, null, 2), e.type || lang.applicationError);
+  }
 };
 import 'start';
