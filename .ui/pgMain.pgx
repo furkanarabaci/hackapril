@@ -1,0 +1,125 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #pgMain",
+			"id": "5671-238e-cade-c0d5",
+			"initialized": true,
+			"props": {
+				"children": [
+					"24dd-1e66-6c74-2b96",
+					"af5f-04dd-50db-a86d",
+					"f65c-3494-f271-f166",
+					"d0a9-6e7c-bf86-f3a3",
+					"bd5e-7706-aed1-e6a1",
+					"94c2-cd6c-9e18-e0c3"
+				],
+				"isRemovable": true,
+				"name": "pgMain",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "PORTRAIT",
+				"safeAreaEnabled": true
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "24dd-1e66-6c74-2b96",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "5671-238e-cade-c0d5"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "af5f-04dd-50db-a86d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "5671-238e-cade-c0d5",
+				"title": "Page1"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Page1",
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "f65c-3494-f271-f166",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "5671-238e-cade-c0d5",
+				"text": "label1"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label1"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "d0a9-6e7c-bf86-f3a3",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "5671-238e-cade-c0d5",
+				"text": "label2"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "label2"
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "bd5e-7706-aed1-e6a1",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "5671-238e-cade-c0d5"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .flLetter.default",
+			"hiddenComponent": false,
+			"id": "94c2-cd6c-9e18-e0c3",
+			"props": {
+				"children": [],
+				"name": "flLetter",
+				"parent": "5671-238e-cade-c0d5",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flLetter",
+				"id": "d0e2-6861-c19a-5bb7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

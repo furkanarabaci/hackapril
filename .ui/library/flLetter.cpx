@@ -1,0 +1,37 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .flLetter",
+			"id": "d0e2-6861-c19a-5bb7",
+			"props": {
+				"children": [
+					"9665-29ee-b07a-07a3"
+				],
+				"name": "flLetter",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label .flLetter-label",
+			"id": "9665-29ee-b07a-07a3",
+			"props": {
+				"children": [],
+				"name": "label2",
+				"parent": "d0e2-6861-c19a-5bb7",
+				"text": "A"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "A"
+			}
+		}
+	]
+}
