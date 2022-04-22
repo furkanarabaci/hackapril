@@ -5,7 +5,7 @@
 			"id": "d0e2-6861-c19a-5bb7",
 			"props": {
 				"children": [
-					"9665-29ee-b07a-07a3"
+					"3009-349f-ecf4-a03a"
 				],
 				"name": "flLetter",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -17,20 +17,43 @@
 			"userProps": {}
 		},
 		{
+			"className": ".sf-flexLayout .flLetter-wrapper",
+			"id": "3009-349f-ecf4-a03a",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"cbf7-f16e-ccc7-0e22"
+				],
+				"name": "flWrapper",
+				"parent": "d0e2-6861-c19a-5bb7",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
 			"className": ".sf-label .flLetter-label",
-			"id": "9665-29ee-b07a-07a3",
+			"id": "cbf7-f16e-ccc7-0e22",
+			"oldName": "label2",
 			"props": {
 				"children": [],
-				"name": "label2",
-				"parent": "d0e2-6861-c19a-5bb7",
-				"text": "A"
+				"name": "lblLetter",
+				"parent": "3009-349f-ecf4-a03a",
+				"text": "C",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "Label",
 			"userProps": {
-				"text": "A"
+				"text": "C",
+				"usePageVariable": true
 			}
 		}
 	]

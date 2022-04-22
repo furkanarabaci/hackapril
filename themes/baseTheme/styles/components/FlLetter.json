@@ -9,22 +9,34 @@
         "flexGrow": 1
       },
       "font": {
-        "size": 45
+        "size": 40
       },
       "textAlignment": "MIDCENTER",
       "textColor": "rgba(255,255,255,1)"
     },
-    "backgroundColor": "rgba( 0, 0, 0, 1 )",
-    ".success": {
-      "backgroundColor": "rgba( 85, 143, 78, 1 )"
-    },
-    ".hint": {
-      "backgroundColor": "rgba( 181, 181, 60, 1 )"
-    },
-    ".failt": {
-      "backgroundColor": "rgba( 58, 58, 60, 1 )"
-    },
-    ".default": {
+    "backgroundColor": "rgba( 255, 255, 255, 0 )",
+    "&-wrapper": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "height": 60,
+      "width": 60,
+      ".success": {
+        "backgroundColor": "rgba( 85, 143, 78, 1 )"
+      },
+      ".hint": {
+        "backgroundColor": "rgba( 181, 181, 60, 1 )"
+      },
+      ".fail": {
+        "backgroundColor": "rgba( 58, 58, 60, 1 )"
+      },
+      ".default": {
+        "backgroundColor": "rgba( 0, 0, 0, 1 )",
+        "height": null,
+        "width": null,
+        "borderColor": "rgba( 86, 86, 86, 1 )",
+        "borderWidth": 1
+      },
       "backgroundColor": "rgba( 0, 0, 0, 1 )"
     }
   }

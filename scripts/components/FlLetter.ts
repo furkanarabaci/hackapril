@@ -1,7 +1,10 @@
 import Animator from '@smartface/native/ui/animator';
+import Font from '@smartface/native/ui/font';
+import EllipsizeMode from '@smartface/native/ui/shared/ellipsizemode';
 import FlLetterDesign from 'generated/my-components/FlLetter';
+import { themeService } from 'theme';
 
-const ANIMATION_DURATION = 500;
+const ANIMATION_DURATION = 350;
 
 export enum WordState {
   SUCCESS = 'success',
@@ -19,26 +22,24 @@ export default class FlLetter extends FlLetterDesign {
     this.pageName = pageName;
   }
   private setWordState(state: WordState) {
-    this.dispatch({
+    this.flWrapper.dispatch({
       type: 'pushClassNames',
-      classNames: `.flLetter.${state}`
+      classNames: `.flLetter-wrapper.${state}`
     });
   }
 
   private animateStateChange(state: WordState) {
-    let defaultHeight = this.height;
+    let defaultHeight = themeService.getNativeStyle('.flLetter').height;
     Animator.animate(this, ANIMATION_DURATION, () => {
-      this.paddingTop = this.height / 2;
-      this.paddingBottom = this.height / 2;
-      this.setWordState(state);
+      this.flWrapper.rotationX = 90;
     }).then(ANIMATION_DURATION, () => {
-      this.height = defaultHeight;
-      this.paddingTop = 0;
-      this.paddingBottom = 0;
+      this.flWrapper.rotationX = 180;
+      this.setWordState(state);
     });
   }
 
   changeState(state: WordState) {
+    this.state = state;
     this.animateStateChange(state);
   }
 }

@@ -16,9 +16,6 @@ export default class PgMain extends PgMainDesign {
    */
   onShow() {
     super.onShow();
-    setTimeout(() => {
-      this.flLetter.changeState(WordState.SUCCESS);
-    }, 200);
   }
 
   /**
@@ -27,11 +24,6 @@ export default class PgMain extends PgMainDesign {
    */
   onLoad() {
     super.onLoad();
-
-    this.flLetter.onTouch = () => {
-      this.flLetter.changeState(WordState.SUCCESS);
-      return true;
-    };
   }
 
   onHide(): void {

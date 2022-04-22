@@ -11,7 +11,7 @@
 					"f65c-3494-f271-f166",
 					"d0a9-6e7c-bf86-f3a3",
 					"bd5e-7706-aed1-e6a1",
-					"94c2-cd6c-9e18-e0c3"
+					"7b98-f5b1-d4c6-b1e6"
 				],
 				"isRemovable": true,
 				"name": "pgMain",
@@ -55,70 +55,62 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".sf-label #pgMain-lblHeader",
 			"id": "f65c-3494-f271-f166",
+			"oldName": "label1",
 			"props": {
 				"children": [],
-				"name": "label1",
+				"name": "lblHeader",
 				"parent": "5671-238e-cade-c0d5",
-				"text": "label1"
+				"text": "HOW TO PLAY"
 			},
 			"type": "Label",
 			"userProps": {
-				"text": "label1"
+				"text": "HOW TO PLAY"
 			}
 		},
 		{
 			"className": ".sf-label",
 			"id": "d0a9-6e7c-bf86-f3a3",
+			"oldName": "label2",
 			"props": {
 				"children": [],
-				"name": "label2",
+				"name": "lblDescription",
 				"parent": "5671-238e-cade-c0d5",
-				"text": "label2"
+				"text": "Guess the WORDLE in six tries.\\n\\nEach guess must be a valid five-letter word. Hit the enter button to submit.\\n\\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
 			},
 			"type": "Label",
 			"userProps": {
-				"text": "label2"
+				"height": null,
+				"maxLines": 0,
+				"text": "Guess the WORDLE in six tries.\\n\\nEach guess must be a valid five-letter word. Hit the enter button to submit.\\n\\nAfter each guess, the color of the tiles will change to show how close your guess was to the word."
 			}
 		},
 		{
-			"className": ".sf-view",
+			"className": ".sf-view #pgMain-separator",
 			"id": "bd5e-7706-aed1-e6a1",
+			"oldName": "view1",
 			"props": {
 				"children": [],
-				"name": "view1",
+				"name": "separator",
 				"parent": "5671-238e-cade-c0d5"
 			},
 			"type": "View",
 			"userProps": {}
 		},
 		{
-			"className": ".sf-flexLayout .flLetter.default",
-			"hiddenComponent": false,
-			"id": "94c2-cd6c-9e18-e0c3",
+			"className": ".sf-label",
+			"id": "7b98-f5b1-d4c6-b1e6",
+			"oldName": "label2",
 			"props": {
 				"children": [],
-				"name": "flLetter",
+				"name": "lblExamples",
 				"parent": "5671-238e-cade-c0d5",
-				"usePageVariable": true
+				"text": "Examples"
 			},
-			"source": {
-				"page": "__library__",
-				"type": "flLetter",
-				"id": "d0e2-6861-c19a-5bb7"
-			},
-			"type": "FlexLayout",
+			"type": "Label",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true
+				"text": "Examples"
 			}
 		}
 	]
