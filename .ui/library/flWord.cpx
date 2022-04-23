@@ -2,6 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": true,
 			"id": "c94d-8383-e021-26af",
 			"props": {
 				"children": [

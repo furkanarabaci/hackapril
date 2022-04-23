@@ -8,15 +8,19 @@
 				"children": [
 					"c3e1-d0cf-c712-d679",
 					"1214-5139-47a0-0ea8",
+					"a27c-fd65-5520-d535",
 					"5b0d-b801-bbbf-9e57",
 					"dff8-6c25-5798-52a8"
 				],
 				"name": "pgMain",
 				"orientation": "PORTRAIT",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
-			"userProps": {},
+			"userProps": {
+				"safeAreaEnabled": true
+			},
 			"version": "0.0.1.a"
 		},
 		{
@@ -38,12 +42,31 @@
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "7f59-c2d6-9258-8fdd",
-				"title": "Wordle"
+				"parent": "7f59-c2d6-9258-8fdd"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Wordle"
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-flexLayout .customHeaderBar",
+			"hiddenComponent": false,
+			"id": "a27c-fd65-5520-d535",
+			"props": {
+				"children": [],
+				"name": "customHeaderBar",
+				"parent": "7f59-c2d6-9258-8fdd"
+			},
+			"source": {
+				"page": "__library__",
+				"type": "customHeaderBar",
+				"id": "4dd1-e61c-844f-4b26"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"left": 0,
+				"top": 0
 			}
 		},
 		{
@@ -69,7 +92,8 @@
 					"db93-7582-59d5-6032",
 					"d5ba-7c04-6933-5273",
 					"d45a-62fc-fba9-9f2e",
-					"701a-e1d5-ab2c-97e0"
+					"701a-e1d5-ab2c-97e0",
+					"07f7-6c82-3812-482b"
 				],
 				"name": "flGuessesWrapper",
 				"parent": "7f59-c2d6-9258-8fdd"
@@ -248,6 +272,23 @@
 				},
 				"left": 0,
 				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textBox #pgMain-guessTextBox",
+			"id": "07f7-6c82-3812-482b",
+			"oldName": "textBox1",
+			"props": {
+				"children": [],
+				"isPassword": true,
+				"name": "tbGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"isPassword": true,
 				"usePageVariable": true
 			}
 		}

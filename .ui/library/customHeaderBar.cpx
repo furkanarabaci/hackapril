@@ -1,0 +1,81 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .customHeaderBar",
+			"id": "4dd1-e61c-844f-4b26",
+			"props": {
+				"children": [
+					"b042-658f-1ba8-18e3",
+					"7be7-d901-b418-ead2",
+					"3f2c-0f38-9eeb-8ff4"
+				],
+				"name": "customHeaderBar",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"top": 383.08
+			}
+		},
+		{
+			"className": ".sf-imageView .customHeaderBar-imgInstruction",
+			"id": "b042-658f-1ba8-18e3",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgInstruction",
+				"parent": "4dd1-e61c-844f-4b26",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"image": "questionmark.png",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label .customHeaderBar-text",
+			"id": "7be7-d901-b418-ead2",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblHeader",
+				"parent": "4dd1-e61c-844f-4b26",
+				"text": "Wordle"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Wordle"
+			}
+		},
+		{
+			"className": ".sf-imageView .customHeaderBar-imgStatistics",
+			"id": "3f2c-0f38-9eeb-8ff4",
+			"oldName": "imageView1",
+			"props": {
+				"children": [],
+				"name": "imgStatistics",
+				"parent": "4dd1-e61c-844f-4b26",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"image": "statistical.png",
+				"usePageVariable": true
+			}
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  ".customHeaderBar": {
+    "height": 60,
+    "flexProps": {
+      "flexDirection": "ROW",
+      "alignItems": "CENTER"
+    },
+    "&-imgInstruction": {
+      "width": 26,
+      "height": 26,
+      "tintColor": "${backgroundInverted}",
+      "imageFillType": "ASPECTFILL"
+    },
+    "&-text": {
+      "flexProps": {
+        "flexGrow": 1
+      },
+      "textAlignment": "MIDCENTER"
+    },
+    "&-imgStatistics": {
+      "width": 26,
+      "height": 26,
+      "imageFillType": "ASPECTFILL",
+      "tintColor": "rgba(255,255,255,1)"
+    },
+    "paddingLeft": 15,
+    "paddingRight": 15
+  }
+}

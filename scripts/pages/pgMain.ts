@@ -17,7 +17,6 @@ export default class PgMain extends PgMainDesign {
    */
   onShow() {
     super.onShow();
-    this.initHeaderBarItems();
   }
 
   /**
@@ -26,14 +25,12 @@ export default class PgMain extends PgMainDesign {
    */
   onLoad() {
     super.onLoad();
+    this.initCustomHeaderBar();
   }
 
-  initHeaderBarItems() {
-    const questionHeaderBarItem = new HeaderBarItem({
-      image: Image.createFromFile('images://questionmark.png', 60, 60),
-      color: Color.WHITE,
-      onPress: () => this.router.push('instructions')
-    });
-    this.headerBar.setItems([questionHeaderBarItem]);
+  initCustomHeaderBar() {
+    const customHeaderBar = this.children.customHeaderBar;
+    customHeaderBar.imgInstruction.on('touchEnded', () => this.router.push('instructions'));
+    customHeaderBar.imgStatistics.on('touchEnded', () => this.router.push('statistics'));
   }
 }

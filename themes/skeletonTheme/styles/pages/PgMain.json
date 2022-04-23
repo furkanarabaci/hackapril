@@ -8,7 +8,16 @@
         "alignItems": "CENTER",
         "flexGrow": 1
       },
-      "paddingTop": 60
+      "paddingTop": 120
+    },
+    "&-guessTextBox": {
+      "marginTop": 40,
+      "width": null,
+      "flexProps": {
+        "alignSelf": "STRETCH"
+      },
+      "textAlignment": "MIDCENTER",
+      "textColor": "rgba(255,255,255,1)"
     }
   }
 }
