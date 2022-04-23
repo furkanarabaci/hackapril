@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page #pgMain",
+			"className": ".sf-page",
 			"id": "fd34-9608-f7dd-6c82",
 			"initialized": true,
 			"props": {
@@ -93,7 +93,7 @@
 			}
 		},
 		{
-			"className": ".sf-view #pgMain-separator",
+			"className": ".sf-view #pgInstructions-separator",
 			"id": "b21a-f84f-be26-6387",
 			"oldName": "view1",
 			"props": {

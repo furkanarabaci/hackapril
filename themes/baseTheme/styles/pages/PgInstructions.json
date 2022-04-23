@@ -1,5 +1,11 @@
 {
   "#pgInstructions": {
-    "backgroundColor": "rgba( 208, 2, 27, 1 )"
+    "alpha": 1,
+    "backgroundColor": "${mainBackground}",
+    "&-separator": {
+      "height": 1,
+      "backgroundColor": "${backgroundFail}",
+      "marginTop": 15
+    }
   }
 }

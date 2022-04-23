@@ -1,8 +1,6 @@
 {
-  ".sf": {
-    "&-headerBar": {
-      "backgroundColor": "rgba( 0, 0, 0, 1 )",
-      "visible": false
-    }
+  ".sf-headerBar": {
+    "visible": false,
+    "backgroundColor": "${backgroundMain}"
   }
 }

@@ -1,7 +1,12 @@
 {
-  ".sf": {
-    "&-label": {
-      "textColor": "rgba( 255, 255, 255, 1 )"
+  ".sf-label": {
+    "textColor": "${backgroundInverted}",
+    "font": {
+      "size": 14,
+      "bold": true,
+      "italic": false,
+      "family": "SFProText",
+      "style": "Semibold"
     }
   }
 }

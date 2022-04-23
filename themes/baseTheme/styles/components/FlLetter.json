@@ -12,9 +12,9 @@
         "size": 40
       },
       "textAlignment": "MIDCENTER",
-      "textColor": "rgba(255,255,255,1)"
+      "textColor": "${backgroundInverted}"
     },
-    "backgroundColor": "rgba( 255, 255, 255, 0 )",
+    "backgroundColor": "${backgroundMain}",
     "&-wrapper": {
       "flexProps": {
         "flexGrow": 1
@@ -22,22 +22,22 @@
       "height": 60,
       "width": 60,
       ".success": {
-        "backgroundColor": "rgba( 85, 143, 78, 1 )"
+        "backgroundColor": "${backgroundSuccess}"
       },
       ".hint": {
-        "backgroundColor": "rgba( 181, 181, 60, 1 )"
+        "backgroundColor": "${backgroundHint}"
       },
       ".fail": {
-        "backgroundColor": "rgba( 58, 58, 60, 1 )"
+        "backgroundColor": "${backgroundFail}"
       },
       ".default": {
-        "backgroundColor": "rgba( 0, 0, 0, 1 )",
+        "backgroundColor": "${backgroundMain}",
         "height": null,
         "width": null,
-        "borderColor": "rgba( 86, 86, 86, 1 )",
+        "borderColor": "${letterBorder}",
         "borderWidth": 1
       },
-      "backgroundColor": "rgba( 0, 0, 0, 1 )"
+      "backgroundColor": "${backgroundMain}"
     }
   }
 }

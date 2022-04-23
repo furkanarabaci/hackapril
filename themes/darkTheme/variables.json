@@ -1,0 +1,8 @@
+{
+  "backgroundMain": "rgba( 0, 0, 0, 1 )",
+  "backgroundInverted": "rgba( 255, 255, 255, 1 )",
+  "backgroundFail": "rgba( 58, 58, 60, 1 )",
+  "backgroundSuccess": "rgba( 85, 143, 78, 1 )",
+  "backgroundHint": "rgba( 181, 181, 60, 1 )",
+  "letterBorder": "rgba( 86, 86, 86, 1 )"
+}
