@@ -17,7 +17,9 @@
 					"1eee-8396-941a-6743",
 					"2343-d69f-9a22-d8a7",
 					"6d8b-bfb7-ec5a-7368",
-					"a369-44be-84c9-7ea5"
+					"a369-44be-84c9-7ea5",
+					"f66c-259c-b5d5-a50b",
+					"c77a-536a-2df4-9931"
 				],
 				"isRemovable": true,
 				"name": "pgInstuctions",
@@ -61,7 +63,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgMain-lblHeader",
+			"className": ".sf-label #pgInstructions-lblHeader",
 			"id": "1c65-8e6c-0768-085c",
 			"oldName": "label1",
 			"props": {
@@ -249,6 +251,33 @@
 			"type": "Label",
 			"userProps": {
 				"text": "The letter U is not in the word in any spot."
+			}
+		},
+		{
+			"className": ".sf-view #pgInstructions-separator",
+			"id": "f66c-259c-b5d5-a50b",
+			"oldName": "view1",
+			"props": {
+				"children": [],
+				"name": "separator2",
+				"parent": "fd34-9608-f7dd-6c82"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-label #pgInstructions-disclaimer",
+			"id": "c77a-536a-2df4-9931",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lblAvailabilityDisclaimer",
+				"parent": "fd34-9608-f7dd-6c82",
+				"text": "A new WORDLE will be available each time you refresh!"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "A new WORDLE will be available each time you refresh!"
 			}
 		}
 	]

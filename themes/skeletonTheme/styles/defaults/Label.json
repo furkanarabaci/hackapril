@@ -8,5 +8,14 @@
       "family": "SFProText",
       "style": "Semibold"
     }
+  },
+  ".sf": {
+    "&-label": {
+      "+Device:Device.os ==='iOS'": {
+        "font": {
+          "size": 16
+        }
+      }
+    }
   }
 }

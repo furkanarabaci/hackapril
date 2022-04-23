@@ -44,7 +44,6 @@
 				"children": [],
 				"name": "lblLetter",
 				"parent": "3009-349f-ecf4-a03a",
-				"text": "C",
 				"usePageVariable": true
 			},
 			"source": {
@@ -52,7 +51,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"text": "C",
 				"usePageVariable": true
 			}
 		}

@@ -21,21 +21,22 @@
       },
       "height": 60,
       "width": 60,
+      "borderColor": "${letterBorder}",
+      "borderWidth": 2,
       ".success": {
+        "borderWidth": 0,
         "backgroundColor": "${backgroundSuccess}"
       },
       ".hint": {
+        "borderWidth": 0,
         "backgroundColor": "${backgroundHint}"
       },
       ".fail": {
+        "borderWidth": 0,
         "backgroundColor": "${backgroundFail}"
       },
       ".default": {
-        "backgroundColor": "${backgroundMain}",
-        "height": null,
-        "width": null,
-        "borderColor": "${letterBorder}",
-        "borderWidth": 1
+        "backgroundColor": "${backgroundMain}"
       },
       "backgroundColor": "${backgroundMain}"
     }

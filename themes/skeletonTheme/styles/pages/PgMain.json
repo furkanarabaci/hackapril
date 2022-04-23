@@ -1,14 +1,3 @@
 {
-  "#pgMain": {
-    "&-lblHeader": {
-      "textAlignment": "MIDCENTER"
-    },
-    "&-separator": {
-      "height": 1,
-      "backgroundColor": "${backgroundMain}",
-      "marginTop": 15
-    },
-    "paddingLeft": 16,
-    "paddingRight": 16
-  }
+  "#pgMain": {}
 }

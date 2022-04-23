@@ -1,11 +1,19 @@
 {
   "#pgInstructions": {
-    "alpha": 1,
     "backgroundColor": "${backgroundMain}",
     "&-separator": {
       "height": 1,
       "backgroundColor": "${backgroundFail}",
       "marginTop": 15
-    }
+    },
+    "&-lblHeader": {
+      "textAlignment": "MIDCENTER"
+    },
+    "paddingLeft": 16,
+    "paddingRight": 16
+  },
+  "&-disclaimer": {
+    "maxLines": 2,
+    "height": null
   }
 }
