@@ -5,6 +5,7 @@
       "justifyContent": "SPACE_AROUND",
       "flexDirection": "ROW"
     },
-    "width": 325
+    "width": 325,
+    "marginBottom": 5
   }
 }

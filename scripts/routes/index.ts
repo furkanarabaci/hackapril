@@ -18,18 +18,13 @@ const router = NativeRouter.of({
         Route.of<PgMain>({
           path: '/pages/main',
           build(router, route) {
-            return new PgInstructions(router, route);
+            return new PgMain(router, route);
           }
         }),
         NativeStackRouter.of({
           path: '/pages/instructions',
           to: '/pages/instructions/main',
-          bottomSheetOptions: {
-            cornerRadius: 15,
-            detents: ['large', 'medium'],
-            isGrabberVisible: true
-          },
-          modalType: 'bottom-sheet',
+          modal: true,
           routes: [
             Route.of<PgInstructions>({
               path: '/pages/instructions/main',

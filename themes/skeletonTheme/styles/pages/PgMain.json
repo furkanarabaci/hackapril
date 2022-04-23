@@ -1,3 +1,14 @@
 {
-  "#pgMain": {}
+  "#pgMain": {
+    "&-scrollView": {},
+    "flexProps": {},
+    "&-guesses": {
+      "flexProps": {
+        "justifyContent": "FLEX_START",
+        "alignItems": "CENTER",
+        "flexGrow": 1
+      },
+      "paddingTop": 60
+    }
+  }
 }

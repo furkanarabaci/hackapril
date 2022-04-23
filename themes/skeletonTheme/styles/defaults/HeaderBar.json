@@ -2,5 +2,14 @@
   ".sf-headerBar": {
     "visible": false,
     "backgroundColor": "${backgroundMain}"
+  },
+  ".sf": {
+    "&-headerBar": {
+      "visible": true,
+      "android": {
+        "elevation": 5
+      },
+      "borderVisibility": "true"
+    }
   }
 }

@@ -8,7 +8,7 @@
 				"children": [
 					"7c85-cd16-5dc1-5249",
 					"3c97-954b-bbcf-41fb",
-					"1c65-8e6c-0768-085c",
+					"a5fe-08a3-4b79-2d51",
 					"71dd-379d-3db8-1db1",
 					"b21a-f84f-be26-6387",
 					"7dd1-abb5-7ac6-8e1a",
@@ -54,28 +54,24 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "fd34-9608-f7dd-6c82",
-				"title": "Page1"
+				"title": "Instructions"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Page1",
-				"visible": false
+				"title": "Instructions"
 			}
 		},
 		{
-			"className": ".sf-label #pgInstructions-lblHeader",
-			"id": "1c65-8e6c-0768-085c",
-			"oldName": "label1",
+			"className": ".sf-view #pgInstructions-separator.header",
+			"id": "a5fe-08a3-4b79-2d51",
+			"oldName": "separator2_1",
 			"props": {
 				"children": [],
-				"name": "lblHeader",
-				"parent": "fd34-9608-f7dd-6c82",
-				"text": "HOW TO PLAY"
+				"name": "separatorHeader",
+				"parent": "fd34-9608-f7dd-6c82"
 			},
-			"type": "Label",
-			"userProps": {
-				"text": "HOW TO PLAY"
-			}
+			"type": "View",
+			"userProps": {}
 		},
 		{
 			"className": ".sf-label",

@@ -5,7 +5,10 @@
       "height": 1,
       "backgroundColor": "${backgroundFail}",
       "marginTop": 15,
-      "marginBottom": 20
+      "marginBottom": 20,
+      ".header": {
+        "marginTop": 0
+      }
     },
     "&-lblHeader": {
       "textAlignment": "MIDCENTER"
@@ -22,6 +25,20 @@
       },
       ".availability": {
         "marginTop": 0
+      }
+    },
+    "&-scrollView": {
+      "flexProps": {
+        "flexGrow": 1,
+        "alignItems": "CENTER",
+        "justifyContent": "CENTER"
+      },
+      "layout": {
+        "height": null,
+        "flexProps": {
+          "justifyContent": "CENTER",
+          "alignItems": "CENTER"
+        }
       }
     }
   }

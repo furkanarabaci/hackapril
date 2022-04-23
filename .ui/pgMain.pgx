@@ -1,98 +1,255 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".sf-page #pgMain",
 			"id": "7f59-c2d6-9258-8fdd",
-			"userProps": {},
-			"className": ".sf-page",
+			"initialized": true,
 			"props": {
-				"name": "pgMain",
-				"parent": null,
 				"children": [
 					"c3e1-d0cf-c712-d679",
-					"1214-5139-47a0-0ea8"
+					"1214-5139-47a0-0ea8",
+					"5b0d-b801-bbbf-9e57",
+					"dff8-6c25-5798-52a8"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		{
-			"type": "StatusBar",
-			"id": "c3e1-d0cf-c712-d679",
-			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "7f59-c2d6-9258-8fdd",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
-		},
-		{
-			"type": "HeaderBar",
-			"id": "1214-5139-47a0-0ea8",
-			"userProps": {
-				"title": "pgMain"
-			},
-			"className": ".sf-headerBar",
-			"props": {
-				"name": "headerBar",
-				"parent": "7f59-c2d6-9258-8fdd",
-				"children": [],
-				"title": "pgMain",
-				"visible": true,
-				"isRemovable": false
-			}
-		}
-	],
-	"componentByID": {
-		"62ee-e279-9528-15ad": {
-			"type": "Page",
-			"id": "7f59-c2d6-9258-8fdd",
-			"userProps": {},
-			"className": ".sf-page",
-			"props": {
 				"name": "pgMain",
-				"parent": null,
-				"children": [
-					"c3e1-d0cf-c712-d679",
-					"1214-5139-47a0-0ea8"
-				],
-				"orientation": "PORTRAIT"
+				"orientation": "PORTRAIT",
+				"parent": null
 			},
-			"version": "0.0.1.a",
-			"initialized": false
-		},
-		"f35d-ebd8-348c-7865": {
-			"type": "StatusBar",
-			"id": "c3e1-d0cf-c712-d679",
+			"type": "Page",
 			"userProps": {},
-			"className": ".sf-statusBar",
-			"props": {
-				"name": "statusBar",
-				"parent": "7f59-c2d6-9258-8fdd",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
-			}
+			"version": "0.0.1.a"
 		},
-		"4f48-1efc-0a9c-01ca": {
-			"type": "HeaderBar",
-			"id": "1214-5139-47a0-0ea8",
-			"userProps": {
-				"title": "pgMain"
-			},
-			"className": ".sf-headerBar",
+		{
+			"className": ".sf-statusBar",
+			"id": "c3e1-d0cf-c712-d679",
 			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7f59-c2d6-9258-8fdd"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "1214-5139-47a0-0ea8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7f59-c2d6-9258-8fdd",
+				"title": "Wordle"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Wordle"
+			}
+		},
+		{
+			"className": ".sf-view #pgInstructions-separator.header",
+			"id": "5b0d-b801-bbbf-9e57",
+			"oldName": "view1",
+			"props": {
 				"children": [],
-				"title": "pgMain",
-				"visible": true,
-				"isRemovable": false
+				"name": "separator",
+				"parent": "7f59-c2d6-9258-8fdd"
+			},
+			"type": "View",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout #pgMain-guesses",
+			"id": "dff8-6c25-5798-52a8",
+			"oldName": "flexLayout1",
+			"props": {
+				"children": [
+					"0a1b-e7a4-a196-b5c2",
+					"47f1-020e-569c-dddc",
+					"db93-7582-59d5-6032",
+					"d5ba-7c04-6933-5273",
+					"d45a-62fc-fba9-9f2e",
+					"701a-e1d5-ab2c-97e0"
+				],
+				"name": "flGuessesWrapper",
+				"parent": "7f59-c2d6-9258-8fdd"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "0a1b-e7a4-a196-b5c2",
+			"oldName": "flFirstWord",
+			"props": {
+				"children": [],
+				"name": "flFirstGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "47f1-020e-569c-dddc",
+			"oldName": "flWord_2_2",
+			"props": {
+				"children": [],
+				"name": "flSecondGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "db93-7582-59d5-6032",
+			"oldName": "flWord_2_1",
+			"props": {
+				"children": [],
+				"name": "flThirdGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "d5ba-7c04-6933-5273",
+			"oldName": "flWord_2",
+			"props": {
+				"children": [],
+				"name": "flFourthGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "d45a-62fc-fba9-9f2e",
+			"oldName": "flWord",
+			"props": {
+				"children": [],
+				"name": "flFifthGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .flWord",
+			"hiddenComponent": false,
+			"id": "701a-e1d5-ab2c-97e0",
+			"oldName": "flWord_1",
+			"props": {
+				"children": [],
+				"name": "flSixthGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flWord",
+				"id": "c94d-8383-e021-26af"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
 			}
 		}
-	}
+	]
 }

@@ -2,12 +2,12 @@ import PgInstuctionsDesign from 'generated/pages/pgInstuctions';
 import { Route, Router } from '@smartface/router';
 import Color from '@smartface/native/ui/color';
 import { LetterState } from 'components/FlLetter';
+import { withDismissAndBackButton } from '@smartface/mixins';
 
-export default class PgInstuctions extends PgInstuctionsDesign {
+export default class PgInstuctions extends withDismissAndBackButton(PgInstuctionsDesign) {
   private disposeables: (() => void)[] = [];
   constructor(private router?: Router, private route?: Route) {
     super({});
-    this.layout.backgroundColor = Color.BLACK;
   }
 
   /**
@@ -16,6 +16,7 @@ export default class PgInstuctions extends PgInstuctionsDesign {
    */
   onShow() {
     super.onShow();
+    this.initDismissButton(this.router);
     this.initCorrectLetter();
     this.initWrongSpot();
     this.initWrongLetter();

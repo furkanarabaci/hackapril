@@ -1,8 +1,12 @@
 import PgMainDesign from 'generated/pages/pgMain';
 import { withDismissAndBackButton } from '@smartface/mixins';
 import { Router, Route } from '@smartface/router';
+import Font from '@smartface/native/ui/font';
+import HeaderBarItem from '@smartface/native/ui/headerbaritem';
+import Image from '@smartface/native/ui/image';
+import Color from '@smartface/native/ui/color';
 
-export default class PgMain extends withDismissAndBackButton(PgMainDesign) {
+export default class PgMain extends PgMainDesign {
   constructor(private router?: Router, private route?: Route) {
     super({});
   }
@@ -13,7 +17,7 @@ export default class PgMain extends withDismissAndBackButton(PgMainDesign) {
    */
   onShow() {
     super.onShow();
-    this.initBackButton(this.router); //Addes a back button to the page headerbar.
+    this.initHeaderBarItems();
   }
 
   /**
@@ -22,5 +26,14 @@ export default class PgMain extends withDismissAndBackButton(PgMainDesign) {
    */
   onLoad() {
     super.onLoad();
+  }
+
+  initHeaderBarItems() {
+    const questionHeaderBarItem = new HeaderBarItem({
+      image: Image.createFromFile('images://questionmark.png', 60, 60),
+      color: Color.WHITE,
+      onPress: () => this.router.push('instructions')
+    });
+    this.headerBar.setItems([questionHeaderBarItem]);
   }
 }
