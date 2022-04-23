@@ -3,8 +3,8 @@ import FlLetter, { LetterState } from './FlLetter';
 
 export default class FlWord extends FlWordDesign {
   pageName?: string | undefined;
-  private _word = 'CCCCC';
-  private letters: FlLetter[];
+  private _word = '';
+  letters: FlLetter[];
   constructor(props?: any, pageName?: string) {
     // Initalizes super class for this scope
     super(props);
@@ -17,11 +17,24 @@ export default class FlWord extends FlWordDesign {
   }
 
   set word(value: string) {
-    if (value.length !== this.letters.length) {
-      throw Error('Given word should be equal to letter count');
+    if (value && value.length !== this.letters.length) {
+      throw Error('Given word should be equal to letter count or empty string to clear letters');
     }
-    this.letters.forEach((letter, index) => (letter.letter = value[index]));
+    this.letters.forEach((letter, index) => {
+      if (!value) {
+        letter.resetState();
+      }
+      letter.letter = value[index];
+    });
     this._word = value;
+  }
+
+  getLetterOfElement(element: number) {
+    return this.letters[element].letter;
+  }
+
+  setLetterofElement(value: string, element: number) {
+    this.letters[element].letter = value;
   }
 
   setLetterState(letterState: LetterState, element: number) {

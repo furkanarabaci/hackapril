@@ -93,7 +93,8 @@
 					"d5ba-7c04-6933-5273",
 					"d45a-62fc-fba9-9f2e",
 					"701a-e1d5-ab2c-97e0",
-					"07f7-6c82-3812-482b"
+					"07f7-6c82-3812-482b",
+					"fb10-ed18-3a41-f1f8"
 				],
 				"name": "flGuessesWrapper",
 				"parent": "7f59-c2d6-9258-8fdd"
@@ -281,14 +282,33 @@
 			"oldName": "textBox1",
 			"props": {
 				"children": [],
-				"isPassword": true,
+				"isPassword": false,
+				"keyboardType": "DEFAULT",
 				"name": "tbGuess",
 				"parent": "dff8-6c25-5798-52a8",
 				"usePageVariable": true
 			},
 			"type": "TextBox",
 			"userProps": {
-				"isPassword": true,
+				"isPassword": false,
+				"keyboardType": "DEFAULT",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button #pgMain-guessButton",
+			"id": "fb10-ed18-3a41-f1f8",
+			"oldName": "button1",
+			"props": {
+				"children": [],
+				"name": "btnGuess",
+				"parent": "dff8-6c25-5798-52a8",
+				"text": "Guess!",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"text": "Guess!",
 				"usePageVariable": true
 			}
 		}

@@ -1,7 +1,7 @@
 import Animator from '@smartface/native/ui/animator';
 import FlLetterDesign from 'generated/my-components/FlLetter';
 
-const ANIMATION_DURATION = 350;
+export const ANIMATION_DURATION = 350;
 
 export enum LetterState {
   SUCCESS = 'success',
@@ -12,7 +12,7 @@ export enum LetterState {
 
 export default class FlLetter extends FlLetterDesign {
   pageName?: string | undefined;
-  private state = LetterState.DEFAULT;
+  state = LetterState.DEFAULT;
   constructor(props?: any, pageName?: string) {
     // Initalizes super class for this scope
     super(props);
@@ -31,26 +31,34 @@ export default class FlLetter extends FlLetterDesign {
   }
 
   private animateStateChange(state: LetterState) {
-    Animator.animate(this.flWrapper, ANIMATION_DURATION, () => {
-      this.flWrapper.rotationX = 90;
-    }).then(ANIMATION_DURATION, () => {
-      this.flWrapper.rotationX = 0;
-      this.setWordState(state);
-    });
+    try {
+      Animator.animate(this.flWrapper, ANIMATION_DURATION, () => {
+        this.flWrapper.rotationX = 90;
+      }).then(ANIMATION_DURATION, () => {
+        this.flWrapper.rotationX = 0;
+        this.setWordState(state);
+      });
+    } catch (e) {
+      console.error(e.message, { Stack: e.stack });
+    }
   }
 
   changeState(state: LetterState) {
-    // if (this.state === state) {
-    //   return;
-    // }
     this.state = state;
-    this.animateStateChange(state);
+    if (state !== LetterState.DEFAULT) {
+      this.animateStateChange(state); // Only animate on guesses
+    }
   }
 
   set letter(value: string) {
-    this.lblLetter.text = value;
+    this.lblLetter.text = value.toUpperCase();
   }
   get letter() {
     return this.lblLetter.text;
+  }
+
+  resetState() {
+    this.state = LetterState.DEFAULT;
+    this.changeState(this.state);
   }
 }

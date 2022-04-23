@@ -8,7 +8,7 @@
         "alignItems": "CENTER",
         "flexGrow": 1
       },
-      "paddingTop": 120
+      "paddingTop": 20
     },
     "&-guessTextBox": {
       "marginTop": 40,
@@ -16,8 +16,21 @@
       "flexProps": {
         "alignSelf": "STRETCH"
       },
-      "textAlignment": "MIDCENTER",
-      "textColor": "rgba(255,255,255,1)"
+      "textColor": "${backgroundInverted}",
+      "borderColor": "${backgroundInverted}",
+      "marginLeft": 16,
+      "marginRight": 16,
+      "borderRadius": 1
+    },
+    "&-guessButton": {
+      "flexProps": {
+        "alignSelf": "STRETCH"
+      },
+      "marginTop": 15,
+      "marginLeft": 16,
+      "marginRight": 16,
+      "borderRadius": 10,
+      "backgroundColor": "${backgroundFail}"
     }
   }
 }
