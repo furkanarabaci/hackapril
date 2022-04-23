@@ -11,17 +11,25 @@ import AutoCapitalize from '@smartface/native/ui/textbox/autocapitalize';
 import { ANIMATION_DURATION, LetterState } from 'components/FlLetter';
 import Toast from '@smartface/native/ui/toast';
 import Screen from '@smartface/native/device/screen';
+import VMasker from 'vanilla-masker';
 
 export default class PgMain extends PgMainDesign {
   guesses: FlWord[];
   currentGuessNumber = 0;
   currentWord = '';
+  didCurrentGameEnd = false;
   private _isRequesting = false;
   constructor(private router?: Router, private route?: Route) {
     super({});
     this.initTextBox();
     this.guesses = [this.flFirstGuess, this.flSecondGuess, this.flThirdGuess, this.flFourthGuess, this.flFifthGuess, this.flSixthGuess];
-    this.btnGuess.onPress = () => this.guessClick();
+    this.btnGuess.onPress = () => {
+      if (this.didCurrentGameEnd) {
+        this.resetGame();
+      } else {
+        this.guessClick();
+      }
+    };
   }
 
   /**
@@ -54,7 +62,14 @@ export default class PgMain extends PgMainDesign {
     this.tbGuess.onTextChanged = (e) => {
       const location = e.location;
       const currentGuess = this.guesses[this.currentGuessNumber];
-      currentGuess.setLetterofElement(e.insertedText, location);
+      this.tbGuess.text = VMasker.toPattern(this.tbGuess.text, {
+        pattern: 'AAAAA'
+      });
+      if (location < 5 && /[A-Za-z]?/.test(e.insertedText)) {
+        currentGuess.setLetterofElement(e.insertedText, location);
+      } else {
+        this.tbGuess.text = this.tbGuess.text.substring(0, 5);
+      }
     };
     this.tbGuess.onActionButtonPress = () => this.guessClick();
     this.tbGuess.autoCapitalize = AutoCapitalize.NONE;
@@ -82,9 +97,11 @@ export default class PgMain extends PgMainDesign {
         return () => this.changeLetterStateAsync(currentGuess, guess.state, index);
       });
       this.checkEndCondition();
+      this.tbGuess.enabled = false;
       //@ts-ignore
       await Promise.series(promises);
       this.currentGuessNumber++;
+      this.tbGuess.text = '';
     } catch (e) {
       const toast = new Toast();
       toast.duration = 2;
@@ -93,6 +110,7 @@ export default class PgMain extends PgMainDesign {
       toast.show();
     } finally {
       this._isRequesting = false;
+      this.tbGuess.enabled = true;
     }
   }
 
@@ -110,7 +128,6 @@ export default class PgMain extends PgMainDesign {
   }
 
   checkEndCondition() {
-    const isAlllSuccess = this;
     const lastGuess = this.guesses[this.currentGuessNumber];
     const didWin = lastGuess.letters.every((letter) => letter.state === LetterState.SUCCESS);
     const toast = new Toast();
@@ -120,12 +137,24 @@ export default class PgMain extends PgMainDesign {
       // It was your last gues and you didn't win.
       toast.messageTextColor = Color.RED;
       toast.message = 'You Lose!';
+      this.btnGuess.text = 'Reset';
+      this.didCurrentGameEnd = true;
       toast.show();
     }
     if (didWin) {
       toast.messageTextColor = Color.GREEN;
       toast.message = 'You Lose!';
+      this.btnGuess.text = 'Reset';
+      this.didCurrentGameEnd = true;
       toast.show();
     }
+  }
+
+  resetGame() {
+    this.clearWords();
+    this.currentGuessNumber = 0;
+    this.tbGuess.text = '';
+    this.didCurrentGameEnd = false;
+    this.btnGuess.text = 'Guess!';
   }
 }

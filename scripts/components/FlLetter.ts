@@ -47,11 +47,13 @@ export default class FlLetter extends FlLetterDesign {
     this.state = state;
     if (state !== LetterState.DEFAULT) {
       this.animateStateChange(state); // Only animate on guesses
+    } else {
+      this.setWordState(state);
     }
   }
 
   set letter(value: string) {
-    this.lblLetter.text = value.toUpperCase();
+    this.lblLetter.text = value?.toUpperCase() || '';
   }
   get letter() {
     return this.lblLetter.text;

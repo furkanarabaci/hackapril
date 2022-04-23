@@ -55,9 +55,9 @@
     "@smartface/core" "^5.0.0-alpha.0"
 
 "@smartface/native@^5.0.0-alpha":
-  version "5.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-beta.5.tgz#8bce889cb62eb0d8ea9479b69b0e167216dc368a"
-  integrity sha512-pugnuXJIZk8XubEYo5aKzm57xxPigITvn+ve5t7wefldBbLG2v+JvRUGBKWMgXKiaAtohssfg60FLAqvXX+0PA==
+  version "5.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@smartface/native/-/native-5.0.0-beta.6.tgz#317c90c9570e29bd77629247f63d6e7855ddbf3f"
+  integrity sha512-eYYUxnOMUVs2hcn8SaNw9Wff+y5JCbWVqmgVMYDmOyJVqU99jH2fC8F7mCi/B8fGgzaPyztuvfqA8xeeWb9ZUA==
   dependencies:
     events "^3.3.0"
 
@@ -88,6 +88,11 @@
   dependencies:
     "@smartface/contx" "^4.2.0"
     "@smartface/styler" "^2.0.0"
+
+"@types/vanilla-masker@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/vanilla-masker/-/vanilla-masker-1.2.1.tgz#5eb024a7ee9d5e9e2caf7e61cb07c37a80c74445"
+  integrity sha512-b5ajZhEff5Ymf0znJ6ReHd4RIzZxb8QORD52/gC9qiG1wgBG+uraJbOgIXIyn4/OLOko/bmDajXuxn2WnYD3ew==
 
 apexcharts@^3.26.3:
   version "3.35.0"
@@ -276,6 +281,11 @@ tinycolor2@^1.4.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
   integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
+
+vanilla-masker@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vanilla-masker/-/vanilla-masker-1.2.0.tgz#c2830e9d994a5fecd2261506477c2707fe589756"
+  integrity sha1-woMOnZlKX+zSJhUGR3wnB/5Yl1Y=
 
 void-elements@^1.0.0:
   version "1.0.0"
