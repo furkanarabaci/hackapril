@@ -1,7 +1,7 @@
 {
   "#pgInstructions": {
     "alpha": 1,
-    "backgroundColor": "${mainBackground}",
+    "backgroundColor": "${backgroundMain}",
     "&-separator": {
       "height": 1,
       "backgroundColor": "${backgroundFail}",

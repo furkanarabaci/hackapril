@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".sf-page",
+			"className": ".sf-page #pgInstructions",
 			"id": "fd34-9608-f7dd-6c82",
 			"initialized": true,
 			"props": {
@@ -149,7 +149,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".sf-label #pgInstructions-disclaimer",
 			"id": "7e06-2934-b8ba-b204",
 			"oldName": "lblCorrectWordHint",
 			"props": {
@@ -160,8 +160,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"height": null,
-				"maxLines": 2,
 				"text": "The letter W is in the word and in the correct spot."
 			}
 		},
@@ -195,7 +193,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".sf-label #pgInstructions-disclaimer",
 			"id": "2343-d69f-9a22-d8a7",
 			"oldName": "label1",
 			"props": {
@@ -206,8 +204,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"height": null,
-				"maxLines": 2,
 				"text": "The letter I is in the word but in the wrong spot."
 			}
 		},
@@ -241,7 +237,7 @@
 			}
 		},
 		{
-			"className": ".sf-label",
+			"className": ".sf-label #pgInstructions-disclaimer",
 			"id": "a369-44be-84c9-7ea5",
 			"oldName": "label2",
 			"props": {
@@ -252,8 +248,6 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"height": null,
-				"maxLines": 2,
 				"text": "The letter U is not in the word in any spot."
 			}
 		}
