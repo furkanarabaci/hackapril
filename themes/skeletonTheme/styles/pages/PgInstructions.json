@@ -4,16 +4,25 @@
     "&-separator": {
       "height": 1,
       "backgroundColor": "${backgroundFail}",
-      "marginTop": 15
+      "marginTop": 15,
+      "marginBottom": 20
     },
     "&-lblHeader": {
       "textAlignment": "MIDCENTER"
     },
     "paddingLeft": 16,
-    "paddingRight": 16
-  },
-  "&-disclaimer": {
-    "maxLines": 2,
-    "height": null
+    "paddingRight": 16,
+    "&-disclaimer": {
+      "maxLines": 2,
+      "height": null,
+      "marginTop": null,
+      "marginBottom": 30,
+      ".wrong": {
+        "marginBottom": 0
+      },
+      ".availability": {
+        "marginTop": 0
+      }
+    }
   }
 }

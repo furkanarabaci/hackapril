@@ -239,7 +239,7 @@
 			}
 		},
 		{
-			"className": ".sf-label #pgInstructions-disclaimer",
+			"className": ".sf-label #pgInstructions-disclaimer.wrong",
 			"id": "a369-44be-84c9-7ea5",
 			"oldName": "label2",
 			"props": {
@@ -266,7 +266,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-label #pgInstructions-disclaimer",
+			"className": ".sf-label #pgInstructions-disclaimer.availability",
 			"id": "c77a-536a-2df4-9931",
 			"oldName": "label1",
 			"props": {
