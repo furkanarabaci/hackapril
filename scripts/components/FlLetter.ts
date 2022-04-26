@@ -17,10 +17,6 @@ export default class FlLetter extends FlLetterDesign {
     // Initalizes super class for this scope
     super(props);
     this.pageName = pageName;
-    this.onTouch = () => {
-      this.changeState(LetterState.SUCCESS);
-      return true;
-    };
   }
   private setWordState(state: LetterState) {
     this.flWrapper.dispatch({

@@ -5,8 +5,8 @@
 			"baseTheme": "skeletonTheme",
 			"themes": [
 				"defaultTheme",
-				"darkTheme",
-				"skeletonTheme"
+				"skeletonTheme",
+				"darkTheme"
 			]
 		},
 		"paths": {

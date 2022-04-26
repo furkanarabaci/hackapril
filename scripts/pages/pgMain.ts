@@ -12,6 +12,7 @@ import { ANIMATION_DURATION, LetterState } from 'components/FlLetter';
 import Toast from '@smartface/native/ui/toast';
 import Screen from '@smartface/native/device/screen';
 import VMasker from 'vanilla-masker';
+import Network from '@smartface/native/device/network';
 
 export default class PgMain extends PgMainDesign {
   guesses: FlWord[];
